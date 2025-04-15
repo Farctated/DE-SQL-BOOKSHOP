@@ -3,7 +3,7 @@
 \echo '\n Here is a list of book titles with the corresponding author:\n'
 
 SELECT title, author_name FROM books
-JOIN authors
+RIGHT JOIN authors
 ON books.author_id = authors.author_id;
 
 
